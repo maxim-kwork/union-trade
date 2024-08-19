@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Oswald:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+body,
+html {
+  background: #f1f0eb;
+  font-family: "Oswald";
+  line-height: 130%;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3490196078);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay--show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.burger {
+  display: none;
+}
+
+.header {
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  background: url("../images/header-bg.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header__select {
+  display: flex;
+}
+.header__select-language {
+  margin-right: 50px;
+}
+.header__select-language, .header__select-currency {
+  display: block;
+  font-family: "Inter";
+  background: transparent;
+  color: #fff;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.header__info-number {
+  font-family: "Inter";
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+.header__info-number:hover {
+  color: #d7c4c4;
+}
+.header__info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding: 10px;
+  width: 250px;
+  height: 55px;
+  margin: 0 30px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+.header__info-btn:hover {
+  transform: scale(1.1);
+}
+.header__info-img--whatsapp {
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
+.header__img {
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 170px);
+  cursor: pointer;
+}
+.header__img path {
+  transition: fill 0.3s ease-in-out;
+}
+.header__img path:hover {
+  fill: #d7c4c4;
+}
+.header__img-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header__top-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+  position: absolute;
+  top: calc(50vh - 117px);
+  left: 50px;
+}
+.header__top-span {
+  display: block;
+  font-size: 38px;
+}
+
+.header__main {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.header__main-inner {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.header__main-nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.header__main-list {
+  display: flex;
+  margin-right: 200px;
+}
+.header__main-item {
+  margin: 0 40px;
+  letter-spacing: 1.26px;
+}
+.header__main-link {
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+.header__main-link:hover {
+  color: #d7c4c4;
+}
+
+.opportunity {
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+.opportunity__inner {
+  padding: 140px 0;
+}
+.opportunity__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.opportunity__cards-big, .opportunity__cards-autoparts, .opportunity__cards-servicing {
+  position: relative;
+}
+.opportunity__cards-big {
+  margin-right: 25px;
+}
+.opportunity__cards-autoparts {
+  margin-bottom: 25px;
+}
+.opportunity__cards-title {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.opportunity__cards-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 65px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #4f4f4f;
+  background: rgba(255, 255, 255, 0.0117647059);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  transition: transform 0.3s ease-in-out;
+}
+.opportunity__cards-btn:hover {
+  transform: scale(1.1);
+}
+
+.types__inner {
+  padding-bottom: 140px;
+}
+.types__title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+.types__btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 60px;
+}
+.types__btn-body {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 18px;
+  width: 670px;
+  height: 65px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.types__btn-body:hover {
+  transform: scale(1.03);
+}
+.types__btn-body--active {
+  background: #4071cb;
+  color: #fff;
+}
+.types__btn-brand {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 670px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  transition: transform 0.3s ease-in-out;
+}
+.types__btn-brand:hover {
+  transform: scale(1.03);
+}
+.types__btn-brand--active {
+  background: #4071cb;
+  color: #fff;
+}
+.types__cars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+.types__cars-show {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.types__cars-show--active {
+  opacity: 1;
+}
+.types__cars-title {
+  text-align: center;
+  margin-top: 10px;
+  color: #4071cb;
+}
+.types__btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #4071cb;
+  padding: 10px;
+  width: 240px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+.types__btn:hover {
+  transform: scale(1.1);
+}
+
+.deals__inner {
+  padding-bottom: 140px;
+}
+.deals__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.deals__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin-bottom: 60px;
+}
+.deals__card {
+  width: 325px;
+  height: 325px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #f1f0eb;
+  transition: transform 0.3s ease-in-out;
+}
+.deals__card:hover {
+  transform: scale(1.06);
+}
+.deals__card:hover-text {
+  opacity: 1;
+}
+.deals__card--accent {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+.deals__card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.deals__card-car {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.deals__card-img {
+  display: block;
+  margin: 0 auto;
+  z-index: 10;
+}
+.deals__card-text {
+  position: absolute;
+  top: -5px;
+  color: red;
+  font-size: 48px;
+  font-weight: 700;
+  right: 60px;
+  letter-spacing: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+.deals__card-text--mitsubishi {
+  left: 0;
+  letter-spacing: 5px;
+}
+.deals__card-text--mercedes {
+  left: 20px;
+  letter-spacing: 5px;
+}
+.deals__card-name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.deals__card-mark {
+  position: relative;
+  color: #4071cb;
+  font-size: 14px;
+}
+.deals__card-mark::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: calc(50% - 1px);
+  right: 33px;
+  transform: translateY(-50%);
+  background: #4071cb;
+}
+.deals__card-preferences {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  margin-bottom: 15px;
+}
+.deals__card-engine {
+  position: relative;
+}
+.deals__card-engine::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 35px;
+  background: url("../images/icons/engine-icon.svg") no-repeat;
+}
+.deals__card-transmission {
+  position: relative;
+}
+.deals__card-transmission::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+  background: url("../images/icons/transmission-icon.svg") no-repeat;
+}
+.deals__card-type {
+  position: relative;
+}
+.deals__card-type::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 33px;
+  background: url("../images/icons/suv-icon.svg") no-repeat;
+}
+.deals__card-price {
+  display: inline-block;
+  width: 285px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #000;
+  transition: transform 0.3s ease-in-out;
+}
+.deals__card-price:hover {
+  transform: scale(1.1);
+}
+.deals__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 1340px;
+}
+
+.steps__inner {
+  padding-bottom: 140px;
+}
+.steps__title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.steps__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.steps__card {
+  padding: 40px 20px;
+  border-radius: 10px;
+  border: 1px solid #4f4f4f;
+}
+.steps__card-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steps__card-number {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.steps__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.steps__card-text {
+  font-size: 18px;
+  font-family: "Inter";
+  max-width: 350px;
+}
+.steps__card-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 285px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #4f4f4f;
+  transition: transform 0.3s ease-in-out;
+}
+.steps__card-btn:hover {
+  transform: scale(1.1);
+}
+.steps__card:nth-child(4), .steps__card:nth-child(5) {
+  grid-column: auto;
+}
+.steps__card:nth-child(5) {
+  grid-column: span 2;
+}
+
+.advantages {
+  opacity: 0;
+  transition-delay: 0.3s;
+  position: relative;
+}
+.advantages__inner {
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages__img {
+  position: relative;
+}
+.advantages__cards {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 170px;
+}
+.advantages__card {
+  padding: 30px 15px;
+  width: 315px;
+  height: 325px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(14.5px);
+          backdrop-filter: blur(14.5px);
+}
+.advantages__card-title {
+  font-size: 24px;
+  max-width: 200px;
+  line-height: 130%;
+}
+.advantages__card-description {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  bottom: 30px;
+  max-width: 270px;
+}
+.advantages__card-description span {
+  display: block;
+}
+
+.footer__inner {
+  padding-bottom: 25px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #d9d9d9;
+}
+.footer__nav-text {
+  color: #4f4f4f;
+  max-width: 225px;
+  letter-spacing: 0.14px;
+  margin-top: 20px;
+}
+.footer__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 50px 0;
+}
+.footer__nav-link {
+  transition: color 0.3s ease-in-out;
+}
+.footer__nav-link:hover {
+  color: #d7c4c4;
+}
+.footer__info {
+  display: flex;
+  align-items: center;
+}
+.footer__info-call {
+  margin-right: 55px;
+}
+.footer__info-call span {
+  display: block;
+  margin-top: 20px;
+  font-size: 24px;
+}
+.footer__info-social {
+  margin-right: 25px;
+}
+.footer__info-img--whatsapp {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+.footer__info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding: 10px;
+  width: 250px;
+  height: 55px;
+  margin: 0 30px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+.footer__info-btn:hover {
+  transform: scale(1.1);
+}
+.footer__cards {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.footer__cards-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__card {
+  padding: 14px;
+  border-radius: 7px;
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+.footer__card-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__card-name {
+  color: #4f4f4f;
+  font-weight: 700;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__card-icon {
+  height: 20px;
+}
+.footer__card-img {
+  width: 28px;
+  height: 24px;
+}
+.footer__card-img:last-child {
+  width: 34px;
+}
+.footer__card-hover {
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+.footer__card-hover--show {
+  opacity: 1;
+}
+
+.section--show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.splide {
+  width: 780px;
+  height: 610px;
+  margin-top: 50px;
+}
+
+.header {
+  color: #000;
+  height: 15vh;
+  background: none;
+}
+.header__select-language, .header__select-currency {
+  color: #000;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.main__title {
+  font-size: 32px;
+  margin-top: 25px;
+}
+.main__description {
+  width: 780px;
+  height: 660px;
+  border-radius: 30px;
+  background: #fff;
+  padding: 30px;
+}
+.main__description-name {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.main__description-text {
+  font-family: "Inter";
+  margin-bottom: 25px;
+}
+.main__description-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-top: 1px solid #d9d9d9;
+}
+.main__description-card {
+  padding: 30px;
+  border: 1px solid #d9d9d9;
+}
+.main__description-title span {
+  display: block;
+  color: #4f4f4f;
+  letter-spacing: 2.145px;
+  margin-top: 5px;
+}
+.main__about {
+  padding: 40px;
+  width: 550px;
+  height: 695px;
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 50px;
+}
+.main__about-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.main__about-drive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.main__about-drive span {
+  display: block;
+}
+
+.deals {
+  padding-top: 140px;
+}
+
+.opportunity__inner {
+  padding: 0 0 140px;
+}
+.opportunity__cards {
+  gap: 20px;
+}
+.opportunity__cards-autoparts {
+  margin: 0;
+}
+
+@media (max-width: 740px) {
+  .header {
+    height: 5vh;
+  }
+  .header__main-link {
+    color: #d9d9d9;
+  }
+  .header__select-language, .header__select-currency {
+    color: #fff;
+  }
+}/*# sourceMappingURL=car.css.map */
